@@ -2,6 +2,8 @@
 
 ![banner](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/rappers.JPG)
 
+[SOURCE](https://www.behance.net/gallery/32828663/Complex-Best-Rapper-Alive-since-1979)
+
 # Table of contents
 
 - [Background](#background)
