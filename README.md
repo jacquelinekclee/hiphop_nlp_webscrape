@@ -1,5 +1,7 @@
 # Has Hip-Hop Gotten Worse? - Web Scraping and NLP Project
 
+[](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/rappers.JPG =1260x600)
+
 # Table of contents
 
 - [Background](#background)
