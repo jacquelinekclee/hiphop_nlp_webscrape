@@ -70,9 +70,11 @@ As stated above, this project has some limitations in terms of the consistency o
 
 ## Usage
 
-Please refer to the [Jupyter Notebook viewer](https://nbviewer.jupyter.org/github/jacquelinekclee/hiphop_nlp_webscrape/blob/master/Has%20Hip-Hop%20Gotten%20Worse_.ipynb#best-worst) to view all the code and visualizations created during this project.
+Please refer to the [Jupyter Notebook viewer](https://nbviewer.jupyter.org/github/jacquelinekclee/hiphop_nlp_webscrape/blob/master/Has%20Hip-Hop%20Gotten%20Worse_.ipynb) to view all the code and visualizations created during this project.
 
 The [source files](#source-files) contain all the functions used to web scrape, process the text, and calcualte the metrics used for the project.
+
+[(Back to top)](#table-of-contents)
 
 ## Findings
 While all four metrics seemed to decline over the years, **% Unique Rhymes to All Rhymes** (number of unique rhymes / number of all rhymes) proved to be the metric with:
@@ -85,6 +87,8 @@ Even though what qualifies as "good music" will always be subjective, quantifyin
 As mentioned above, hip-hop has become the most popular genre of music. With this ever increasing popularity comes more commercial and lucrative opportunities, and such opportunities are not necessarily conducive to lyrically complex and intricately crafted songs. The genre becoming more commerical and marketable does not mean that there are no lyrically interesting songs being made. But, this trend may contribute to an oversaturated market, where mostly catchy, less intricate songs become popular.
 
 Overall, this project gives evidence that hip-hop as a genre has not seen a dramatic decline. Instead, changing trends in the music industry and how the public consumes media may affect what types of songs become most popular, but not necessarily the skills of all rappers.  
+
+[(Back to top)](#table-of-contents)
  
 ## Source Files
 * [web_scrape.py](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/web_scrape.py)
@@ -95,4 +99,4 @@ Overall, this project gives evidence that hip-hop as a genre has not seen a dram
   * Provides the functions used to calculate the rhyme-based metrics
   * The contents of this file are adopted from the dandelion package as laid out [here](https://github.com/DiegoVicen/dandelion). Edits made by me (jacquelinekclee) are denoted in the docstrings.
  
-  [(Back to top)](#table-of-contents)
+[(Back to top)](#table-of-contents)
