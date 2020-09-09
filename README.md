@@ -13,6 +13,7 @@
 - [Goal](#goal)
 - [Usage](#usage)
 - [Findings](#findings)
+- [Legality](#legality)
 - [Source Files](#source-files)
 
 ## Background
@@ -100,5 +101,12 @@ Overall, this project gives evidence that hip-hop as a genre has not seen a dram
 * [rhyme.py](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/rhyme.py)
   * Provides the functions used to calculate the rhyme-based metrics
   * The contents of this file are adopted from the dandelion package as laid out [here](https://github.com/DiegoVicen/dandelion). Edits made by me (jacquelinekclee) are denoted in the docstrings.
+ 
+ ## Legality
+ 
+ This personal project was made for the sole intent of applying my skills in Python thus far and as a way to learn new ones. It is intended for non-commercial uses only.
+ 
+ Some issues with webscraping from AZLyrics arose as I was developing this project because the website detected an unusual amount of activity. An alternative to AZLyrics is
+ [archive.org](https://archive.org/), a website that regularly stores archives for various webpages. Nonetheless, using the [Jupyter Notebook viewer](https://nbviewer.jupyter.org/github/jacquelinekclee/hiphop_nlp_webscrape/blob/master/Has%20Hip-Hop%20Gotten%20Worse_.ipynb) should not present any issues.
  
 [(Back to top)](#table-of-contents)
