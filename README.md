@@ -11,6 +11,7 @@
 - [Lyrics Source](#lyrics-source)
 - [Metrics](#metrics)
 - [Goal](#goal)
+- [Usage](#usage)
 - [Findings](#findings)
 - [Source Files](#source-files)
 
