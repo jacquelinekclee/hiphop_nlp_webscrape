@@ -11,6 +11,7 @@
 - [Lyrics Source](#lyrics-source)
 - [Metrics](#metrics)
 - [Goal](#goal)
+- [Findings](#findings)
 - [Source Files](#source-files)
 
 ## Background
@@ -49,8 +50,6 @@ The lyrics for each will be scraped from **[AZLyrics](https://www.azlyrics.com/)
   * Most common rhyme schemes are aabb and abab, so I will only look for these 2.
   * I will exclude bars using the same words to create the rhyme scheme. In other words, if two bars are "I like greens / She likes greens," this rhyme will not be counted as the same word is used. This will be done in attempt to accredit songs that more cleverly create rhyme schemes and to avoid inflating this metric for songs with choruses that may be extremely repetitive (e.g., ["Mama Said Knock You Out" by LL Cool J](https://www.azlyrics.com/lyrics/llcoolj/mamasaidknockyouout.html)).
   * The fucntions used to analyze rhymes use the Carnegie Mellon University Pronouncing Dictionary. Therefore, the creativity and accents rapper use to manipulate different rhymes will unfortunately not be detected. Thus, this measure will be analyzed with a grain of salt.
-* The proportion of exact end rhymes and vowel end rhymes (for the **last two words** in every two bars or every other bar) to number of bars.
-  * This doesn't take into account rhymes like "maintain" and "blame game" where the last two syllables of 2 bars rhyme. Rhymes like "blue pen" and "pursue hen" would count. Again, this measure will be analyzed with a grain of salt.
 * Additionally, I will also be looking at the most common words (excluding stop words) for each song. This measure is much more subjective than the others, but could potentially give insight into a song's substance.
 
 [(Back to top)](#table-of-contents)
@@ -69,13 +68,31 @@ As stated above, this project has some limitations in terms of the consistency o
 
 [(Back to top)](#table-of-contents)
 
+## Usage
+
+Please refer to the [Jupyter Notebook viewer](https://nbviewer.jupyter.org/github/jacquelinekclee/hiphop_nlp_webscrape/blob/master/Has%20Hip-Hop%20Gotten%20Worse_.ipynb#best-worst) to view all the code and visualizations created during this project.
+
+The [source files](#source-files) contain all the functions used to web scrape, process the text, and calcualte the metrics used for the project.
+
+## Findings
+While all four metrics seemed to decline over the years, **% Unique Rhymes to All Rhymes** (number of unique rhymes / number of all rhymes) proved to be the metric with:
+- The strongest correlation coefficient (-0.52)
+- Lowest p-value (p = 0.003)
+![scatter](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/rhymes_plot.png)
+
+Even though what qualifies as "good music" will always be subjective, quantifying the quality of lyrics in these songs proved to be insightful. The generally weak relationships between each metric and year indicate that any "decline" in hip-hop/rap music may not be as strong as some would assume. 
+
+As mentioned above, hip-hop has become the most popular genre of music. With this ever increasing popularity comes more commercial and lucrative opportunities, and such opportunities are not necessarily conducive to lyrically complex and intricately crafted songs. The genre becoming more commerical and marketable does not mean that there are no lyrically interesting songs being made. But, this trend may contribute to an oversaturated market, where mostly catchy, less intricate songs become popular.
+
+Overall, this project gives evidence that hip-hop as a genre has not seen a dramatic decline. Instead, changing trends in the music industry and how the public consumes media may affect what types of songs become most popular, but not necessarily the skills of all rappers.  
+ 
 ## Source Files
-* [web_scrape.py](web_scrape.py)
+* [web_scrape.py](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/web_scrape.py)
   * Has all the functions used for web scraping and processing the HTML. It also processes the string (lyrics) so it's ready for analyzing the lyrics.
-* [lyrics.py](lyrics.py)
+* [lyrics.py](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/lyrics.py)
   * Used to break down the string of lyrics into bars and words and calculate the word based metrics.
-* [rhyme.py](rhyme.py)
+* [rhyme.py](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/rhyme.py)
   * Provides the functions used to calculate the rhyme-based metrics
   * The contents of this file are adopted from the dandelion package as laid out [here](https://github.com/DiegoVicen/dandelion). Edits made by me (jacquelinekclee) are denoted in the docstrings.
-  
+ 
   [(Back to top)](#table-of-contents)
