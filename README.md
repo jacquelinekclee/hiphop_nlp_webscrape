@@ -1,8 +1,12 @@
 # Has Hip-Hop Gotten Worse? - Web Scraping and NLP Project
 
-![banner](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/rappers.JPG)
+![banner](/docs/assets/rappers.JPG)
 
 [SOURCE](https://www.behance.net/gallery/32828663/Complex-Best-Rapper-Alive-since-1979)
+
+# Links
+- [Website](https://jacquelinekclee.github.io/hiphop_nlp_webscrape/)
+- [Repository (with all relevant files/data)](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/)
 
 # Table of contents
 
