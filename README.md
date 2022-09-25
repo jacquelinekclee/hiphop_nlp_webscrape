@@ -87,7 +87,7 @@ While all four metrics seemed to decline over the years, **% Unique Rhymes to Al
 - The strongest correlation coefficient (-0.52)
 - Lowest p-value (p = 0.003)
 
-![scatter](https://github.com/jacquelinekclee/hiphop_nlp_webscrape/blob/master/rhymes_plot.png)
+![scatter](/docs/assets/rhymes_plot.png)
 
 Even though what qualifies as "good music" will always be subjective, quantifying the quality of lyrics in these songs proved to be insightful. The generally weak relationships between each metric and year indicate that any "decline" in hip-hop/rap music may not be as strong as some would assume. 
 
